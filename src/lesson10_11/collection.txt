@@ -1,0 +1,12 @@
+java.util.Stack.peek() Method Example -
+""
+ Learning Java.util Packages in simple and easy steps :
+ A beginner's tutorial containing complete knowledge of all
+
+
+
+ the classes, interfaces, enumerations and exceptions have
+ been explained with
+
+
+ examples for beginners to advanced java programmers.
