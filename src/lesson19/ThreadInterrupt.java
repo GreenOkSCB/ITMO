@@ -1,6 +1,6 @@
 package lesson19;
 
-public class Daemon {
+public class ThreadInterrupt {
     public static void main(String[] args) throws InterruptedException {
         Thread t = new Thread(){
             @Override
@@ -15,7 +15,7 @@ public class Daemon {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
 
-                        Thread.currentThread().interrupt();
+                        Thread.currentThread().interrupt(); // Обязательно!!!
                     }
                 }
             }
