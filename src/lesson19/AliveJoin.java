@@ -7,16 +7,16 @@ public class AliveJoin {
             public void run() {
                 Thread curThread = Thread.currentThread();
 
-                System.out.println(curThread.getName() + " isAlive: " + curThread.isAlive());
+                System.out.println(curThread.getName() + " state: " + curThread.getState());
             }
         };
 
-        System.out.println("Before start isAlive:" + t.isAlive());
+        System.out.println("Before start state: " + t.getState());
 
         t.start();
 
         t.join(); // Ждем окончания выполнения потока t
 
-        System.out.println("After join isAlive: " + t.isAlive());
+        System.out.println("After join state: " + t.getState());
     }
 }
