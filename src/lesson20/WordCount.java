@@ -2,16 +2,20 @@ package lesson20;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class WordCount {
     private static Map<String, Integer> result = new HashMap<>();
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        List<String> lines = Files.readAllLines(new File("wap.txt").toPath());
+        InputStream in = WordCount.class.getClassLoader().getResourceAsStream("wap.txt");
+
+        BufferedReader rdr = new BufferedReader(new InputStreamReader(in));
+
+        List<String> lines = rdr.lines().collect(toList());
 
         int cpus = Runtime.getRuntime().availableProcessors();
 
