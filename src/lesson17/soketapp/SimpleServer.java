@@ -1,6 +1,6 @@
 package lesson17.soketapp;
 
-import org.omg.CORBA.portable.OutputStream;
+//import org.omg.CORBA.portable.OutputStream;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

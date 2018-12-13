@@ -29,7 +29,6 @@ public class lesson1 {
 
     public static void main(String[] args) {  // в idea psvm
         System.out.println("Все, что хотите вывести на экран"); // в idea sout
-
 //        Объявление переменных в java
 //    int (тип данных) varName (имя переменной);
         int varName;
@@ -95,6 +94,7 @@ public class lesson1 {
         String str3 = new String("STRING");
         String str4 = new String("STRING");
 
+        Object o;
         System.out.println(str == str2); // true
         System.out.println(str3 == str4); // false
         System.out.println(str3.equals(str4)); // true

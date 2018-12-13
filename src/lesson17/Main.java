@@ -27,10 +27,10 @@ public class Main {
 
         stat.updateStat();
 
-        try (ObjectOutputStream oouts = new ObjectOutputStream(
+        try (ObjectOutputStream objOuts = new ObjectOutputStream(
                 new FileOutputStream(statFile)
         )){
-            oouts.writeObject(stat);
+            objOuts.writeObject(stat);
         }
     }
 }

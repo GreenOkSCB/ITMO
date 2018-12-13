@@ -10,7 +10,7 @@ public class BuilderUse {
         director.constructComputer();
 
         Computer computer = director.getComputer();
-
+        System.out.println(computer);
 
     }
 }

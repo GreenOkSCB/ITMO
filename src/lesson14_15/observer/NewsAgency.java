@@ -27,7 +27,8 @@ public class NewsAgency {
 
     public static void main(String[] args) {
         NewsAgency newsAgency = new NewsAgency();
-
+        NewsAgency newsAgency2 = new NewsAgency();
+        System.out.println(newsAgency.equals(newsAgency2));
         newsAgency.subscribe(new Listener() {
             @Override
             public void publish(String message) {
